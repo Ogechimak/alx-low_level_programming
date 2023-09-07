@@ -1,5 +1,5 @@
 #!/bin/bash
-#include <stdio>
+#include <stdio.h>
 /**
  * Main - this is main  put function
  * Return: 0
