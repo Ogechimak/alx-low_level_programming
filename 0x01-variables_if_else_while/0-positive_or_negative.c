@@ -1,12 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**
- * main -Prints random number decides if it is positive,negative or zero
- * Return: 0
- */
 
-/* more headers goes there */
+/**
+ * main - print a random number decides whether it is positive,negative or zero
+ * Return:0
+ */
+/* more hearders goes there */
 
 /* betty style doc for function main goes there */
 int main(void)
@@ -17,10 +17,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-	printf("%d is postive/n", n);
+	printf("%d is positive\n", n);
 	else if (n < 0)
-	printf("%d is negative/n", n);
-	else 
-	printf("%d is zero/n", n);
+	printf("%d is negative\n", n);
+	else
+	printf("%d is zero\n", n);	
 	return (0);
 }
