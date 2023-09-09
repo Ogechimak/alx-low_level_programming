@@ -3,7 +3,7 @@
 /**
  * main - prints all possible combinations of two two-digit
  *
- * Return: Always 0.
+ * Return: Always '0'.
  *
  */
 
