@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * strtow - function that splits a string into words
- * @str: the parameter
+ * count_word - function that splits a string into words
+ * @s: the parameter
  * Return: return null
  */
 
