@@ -5,7 +5,7 @@
 
 /**
  *  *_realloc - function that reallocates a memory block
- * @*ptr: parameter 1
+ * @ptr: the parameter 1
  * @old_size: parameter 2
  * @new_size: parameter 3
  * Return: return NULL
