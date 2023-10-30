@@ -1,31 +1,37 @@
 #include "main.h"
 
 /**
- * create_file - function that creates a file
- * @filename: the file name
- * @text_content: this is a string terminated by NULL
+ * create_file - it creates a file
+ * @filename: the name of the file create
+ * @text_content: it is a terminated string of a NULL
  * Return: return 1
  */
 
 int create_file(const char *filename, char *text_content)
 {
-	int i, mop;
+	int mop;
+	int nletters;
+	int mwr;
 
-	if (filename == NULL)
-	return (-1);
-	if (text_content == NULL)
-	{
-	for (i = 0; text_content[i];)
-	i++;
-	}
-	else
-	i = 0;
+	if (!filename)
+		return (-1);
 
-	mop = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	write(mop, text_content, i);
+	mop = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 	if (mop == -1)
-	return (-1);
+		return (-1);
+
+	if (!text_content)
+		text_content = "";
+
+	for (nletters = 0; text_content[nletters]; nletters++)
+		;
+
+	mwr = write(mop, text_content, nletters);
+
+	if (mwr == -1)
+		return (-1);
+
 	close(mop);
 	return (1);
 }
