@@ -12,11 +12,11 @@ int create_file(const char *filename, char *text_content)
 	int i, mop;
 
 	if (filename == NULL)
-		return (-1);
+	return (-1);
 	if (text_content == NULL)
 	{
-		for (i = 0; text_content[i];)
-			i++;
+	for (i = 0; text_content[i];)
+	i++;
 	}
 	else
 	i = 0;
@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 	write(mop, text_content, i);
 
 	if (mop == -1)
-		return (-1);
+	return (-1);
 	close(mop);
 	return (1);
 }
