@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_file - function that appends text
+ * create_file - function that creates a file
  * @filename: the file name
  * @text_content: this is a string terminated by NULL
  * Return: return 1
