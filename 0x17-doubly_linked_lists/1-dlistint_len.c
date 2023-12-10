@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - function that returns the number of a doubly lineked list
- * @head: pointer to pointer that point to head node
- * @n: the data
- * Return: address of the new node or NULL if failure occur
+ * dlistint_len - function that returns the number of a doubly lineked list
+ * @h: pointer
+ * Return: return count
  */
 
 size_t dlistint_len(const dlistint_t *h)
