@@ -20,9 +20,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node = create_hash_node(key, new_value);
 	if (node == NULL)
 		return (0);
-	/* create an array index using the hash_djb2 algorithm */
 	index = key_index((const unsigned char *)key, ht->size);
-	/* check if the node already exit in the table */
 	head = ht->array[index];
 	if (head == NULL)
 	{
